@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="base-jb.xml"/>
+
+  <remote fetch="git://github.com/mozillabd/" name="mozillabd"/>
+  <default remote="caf" revision="refs/tags/android-4.3_r2.1" sync-j="4"/>
+
+  <!-- Symphony W70Q specific things -->
+  <project path="device/qcom/common" name="device/qcom/common" remote="caf" />
+  <project path="device/qcom/msm7627a" name="platform/vendor/qcom/msm7627a" remote="caf" />
+  <project path="device/symphony/w70q" name="android-device-w70q" remote="mozillabd" revision="master" />
+  <project path="kernel" name="codeaurora_kernel_msm" remote="b2g" revision="master" />
+  <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" remote="caf" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" remote="b2g" />
+  <project path="hardware/qcom/media" name="platform/hardware/qcom/media" remote="caf" />
+  <project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" remote="caf" />
+  <project path="hardware/msm7k" name="platform/hardware/msm7k" remote="caf" />
+  <project path="vendor/qcom/opensource/omx/mm-core" name="platform/vendor/qcom-opensource/omx/mm-core" remote="caf" />
+  <project path="hardware/ril" name="platform/hardware/ril" remote="caf" revision="fe9a3f63922143b57e79ed570bab2328df8c83a5"/>
+</manifest>
